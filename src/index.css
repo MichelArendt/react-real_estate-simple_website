@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+    @layer base {
+      :root {
+        --gradient: #20244E;
+        --background: 237 97.1% 98.44%;
+        --foreground: 237 4.2% 0.88%;
+
+        --background-muted: 240, 23%, 93%;
+
+        --muted: 237 4.2% 92.2%;
+        --muted-foreground: 237 2.1% 42.2%;
+
+        --popover: 237 56.4% 92.2%;
+        --popover-foreground: 237 4.2% 1.1%;
+
+        --card: 237 56.4% 92.2%;
+        --card-foreground: 237 4.2% 1.1%;
+
+        --border: 237 9.2% 89.88%;
+        --input: 237 9.2% 89.88%;
+
+        --primary: 237 42% 22%;
+        --primary-foreground: 237 0.84% 92.2%;
+
+        --secondary: 237 2.1% 96.1%;
+        --secondary-foreground: 237 3.52% 12.2%;
+
+        --accent: 237 2.1% 96.1%;
+        --accent-foreground: 237 3.52% 12.2%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+
+        --ring: 237 42% 22%;
+
+        --radius: 0.5rem;
+
+        --font-montserrat: "Montserrat", sans-serif;
+        --font-lora: "Lora", serif;
+        --font-weight-thin: 100; /* Thin (Hairline) */
+        --font-weight-extra_light: 200; /* Extra Light (Ultra Light) */
+        --font-weight-light: 300; /* Light */
+        --font-weight-regular: 400; /* Normal (Regular) */
+        --font-weight-medium: 500; /* Medium */
+        --font-weight-semi_bold: 600; /* Semi Bold (Demi Bold) */
+        --font-weight-bold: 700; /* Bold */
+        --font-weight-extra_bold: 800; /* Extra Bold (Ultra Bold) */
+        --font-weight-black: 900; /* Black (Heavy) */
+
+        --color-primary: hsl(237, 45%, 21%);
+        --color-secondary: hsl(30, 26%, 48%);
+        --color-highlight: hsl(180, 5%, 93%);
+        --color-highlight2: #c50000;
+        --color-highlight3: #5D987C;
+      }
+
+      body {
+        font-family: var(--font-montserrat);
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+      .text__display-title, .text__display-subtitle {
+        font-family: var(--font-lora);
+      }
+
+      .text__display-title {
+        font-size: 64px;
+        font-weight: var(--font-weight-medium);
+      }
+
+      .text__display-subtitle {
+        font-size: 40px;
+        font-weight: var(--font-weight-regular);
+      }
+
+      .text__lead {
+        font-size: 18px;
+        font-weight: var(--font-weight-medium);
+      }
+
+      .text__section-title {
+        font-size: 20px;
+        font-weight: var(--font-weight-extra_bold);
+        text-transform: uppercase;
+      }
+
+      .text__section-categories {
+        font-size: 16px;
+        font-weight: var(--font-weight-extra_bold);
+      }
+
+      .text__card-title {
+        font-size: 18px;
+        font-weight: var(--font-weight-bold);
+      }
+
+      .text__paragraph, .text__highlight {
+        font-size: 16px;
+      }
+
+      .text__paragraph {
+        font-weight: var(--font-weight-regular);
+      }
+
+      .text__highlight {
+        font-weight: var(--font-weight-medium);
+      }
+    }
+
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
